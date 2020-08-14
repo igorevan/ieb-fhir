@@ -27,9 +27,7 @@
 					<!-- ********************************************************** -->
 
 						<div class="well">
-							This is a RESTful server tester, which can be used to send
-							requests to, and receive responses from the server at the
-							following URL: 
+							Esse é um servidor RESTful, com o qual pode ser utilizado para enviar solicitações e receber respostas do servidor.
 						</div>
 
 						<!-- ************************************************ -->
@@ -41,8 +39,7 @@
 								<h3 class="panel-title" th:text="'Resource: ' + ${resourceName}">Resource: <b>Patient</b></h3>
 							</div>
 							<div class="panel-body">
-								This page contains various operations for interacting with
-								the <th:block th:text="${resourceName}"></th:block> resource.
+								Essa página contém várias operações para interagir com o resource <th:block th:text="${resourceName}"></th:block>.
 							</div>
 						</div>
 						
@@ -50,10 +47,10 @@
 						<ul class="nav nav-tabs" role="tablist" id="resource-nav-tabs">
 							<!-- Search Tab -->
 							<li th:if="${haveSearchParams}" >
-								<a href="#tab-search" role="tab" data-toggle="tab">Search</a>
+								<a href="#tab-search" role="tab" data-toggle="tab">Pesquisar</a>
 							</li>
 							<li th:if="${!haveSearchParams}" class="disabled">
-								<a href="#tab-search" role="tab">Search</a>
+								<a href="#tab-search" role="tab">Pesquisar</a>
 							</li>
 							<!-- Queries Tab -->
 							<li th:if="${!queries.empty}">
@@ -64,7 +61,7 @@
 							</li>
 							<!-- CRUD Tab -->
 							<li th:class="(${!haveSearchParams} and ${queries.empty}) ? 'active'">
-								<a href="#tab-otheractions" role="tab" data-toggle="tab" name="tabCrudOperationsLink">CRUD Operations</a>
+								<a href="#tab-otheractions" role="tab" data-toggle="tab" name="tabCrudOperationsLink">Operações CRUD</a>
 							</li>
 							<!-- Tags Tab -->
 							<li>
@@ -96,7 +93,7 @@
 								    	<div class="col-sm-2" style="padding-left: 0px;">
 											<button type="button" id="search-btn" class="btn btn-primary btn-block">
 												<span class="glyphicon glyphicon-search"></span>
-												Search
+												Pesquisar
 											</button>
 										</div>												
 									</div>
@@ -124,7 +121,7 @@
 									<br clear="all"/>
 									
 									<div class="row-fluid">
-										<h4>Search Parameters <small>Optionally add parameter(s) to the search</small></h4>
+										<h4>Pesquisar Parâmetros <small>Adicione parâmetros à pesquisa opcionalmente</small></h4>
 									</div>
 									
 									<div id="search-param-rows" style="padding-left: 15px;">
@@ -133,7 +130,7 @@
 									
 									<!-- Includes -->
 									<div class="row-fluid">
-										<h4>Includes <small>Also include resources which are referenced by the search results</small></h4>
+										<h4>Incluir <small>Also include resources which are referenced by the search results</small></h4>
 									</div>									
 									<div class="row-fluid">
 										<span th:each="include : ${includes}" class="includeCheckContainer">
@@ -146,12 +143,12 @@
 
 									<!-- Results Sorting -->
 									<div class="row-fluid">
-										<h4>Sort Results</h4>
+										<h4>Ordenar Resultados</h4>
 									</div>
 									<div class="row-fluid">
 										<!-- Sort By... -->
 										<div class='col-sm-6'>
-										<label>Sort By</label>
+										<label>Ordenar por</label>
 										<div class="btn-group">
 											<input type="hidden" id="sort_by" />
 											<button type="button" class="btn btn-info" id="search_sort_button">Default</button>
@@ -186,7 +183,7 @@
 									<br clear="all"/>
 
 									<div class="row-fluid">
-										<h4>Other Options</h4>
+										<h4>Outras Opções</h4>
 									</div>
 									
 									<div class="row-fluid">
@@ -194,7 +191,7 @@
 								            <div class="form-group">
 								                <div class='input-group date'>
 								                    <div class="input-group-addon">
-								                    Limit
+								                    Limite
 								                    </div>
 								                    <input type="text" class="form-control" id="resource-search-limit" placeholder="max # returned"/>
 								                </div>

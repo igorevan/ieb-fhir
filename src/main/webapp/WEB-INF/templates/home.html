@@ -67,7 +67,7 @@
 								<!-- Conformance -->
 								
 									<div class="row-fluid">
-										Retrieve the server's <b>conformance</b> statement.										
+										Mostrar a <b>Declaração de Conformidade</b> do servidor.										
 									</div>
 								    <div class="row-fluid">
 								    	<div class="col-sm-3 form-group">
@@ -90,8 +90,7 @@
 								
 									<br clear="all"/>
 									<div class="row-fluid">
-										Retrieve the update <b>history</b> across all resource types on
-										the server.										
+										Mostrar o <b>histórico</b> de atualizações de resources no servidor.									
 									</div>
 								    <div class="row-fluid top-buffer">
 								    	<div class="col-sm-3">
@@ -105,7 +104,7 @@
 								            <div class="form-group">
 								                <div class='input-group date' id='server-history-datetime' data-date-format="YYYY-MM-DDTHH:mm:ss">
 								                    <div class="input-group-addon">
-								                    Since
+								                    Desde
 								                    </div>
 								                    <input type='text' class="form-control" id="server-history-since"/>
 								                    <div class="input-group-addon">
@@ -118,7 +117,7 @@
 								            <div class="form-group">
 								                <div class='input-group'>
 								                    <div class="input-group-addon">
-								                    Limit #
+								                    Limite #
 								                    </div>
 								                    <input type="text" class="form-control" id="server-history-limit" placeholder="(opt)"/>
 								                </div>
@@ -150,8 +149,7 @@
 								
 									<br clear="all"/>
 									<div class="row-fluid">
-										Post a bundle containing multiple resources to the server and
-										store all resources within a single atomic transaction.										
+										Postar um bundle contendo vários resources no servidor e armazenar todos eles em uma única transação.										
 									</div>
 								    <div class="row-fluid">
 								    	<div class="col-sm-3">
@@ -167,7 +165,7 @@
 								                    Bundle
 								                    <span class="loadingStar">*</span>
 								                    </div>
-								                    <textarea class="form-control" id="transaction-body" style="white-space: nowrap; overflow: auto;" placeholder="(place transaction bundle body here)" rows="1"><th:block th:if="${transactionBundle} != null" th:text="${transactionBundle}"/></textarea>
+								                    <textarea class="form-control" id="transaction-body" style="white-space: nowrap; overflow: auto;" placeholder="(cole o bundle de transação aqui)" rows="1"><th:block th:if="${transactionBundle} != null" th:text="${transactionBundle}"/></textarea>
 								                </div>
 								            </div>
 								        </div>											
