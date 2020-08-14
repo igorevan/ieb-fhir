@@ -1,8 +1,6 @@
 # IEB FHIR
 
-This project is a complete starter project you can use to deploy a FHIR server using HAPI FHIR JPA.
-
-Note that this project is specifically intended for end users of the HAPI FHIR JPA server module (in other words, it helps you implement HAPI FHIR, it is not the source of the library itself). If you are looking for the main HAPI FHIR project, see here: https://github.com/jamesagnew/hapi-fhir
+Projeto com objetivo de implementar o protocolo HL7 FHIR nas pesquisas do Instituto de Engenharia Biomédica (IEB) da Universidade Federal de Santa Catarina (UFSC).
 
 ## Prerequisites
 
