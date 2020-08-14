@@ -218,6 +218,7 @@ body .syntaxhighlighter .line {
 .main {
   padding: 20px;
 }
+
 @media (min-width: 768px) {
 	.main {
 		padding-top: 10px;
