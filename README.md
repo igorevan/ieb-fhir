@@ -1,4 +1,4 @@
-# IEB FHIR
+# IEB | FHIR
 
 Projeto com objetivo de implementar o protocolo HL7 FHIR nas pesquisas do Instituto de Engenharia Biomédica (IEB) da Universidade Federal de Santa Catarina (UFSC).
 
