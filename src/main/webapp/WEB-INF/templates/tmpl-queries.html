@@ -47,10 +47,10 @@
 							<th:block th:text="${param.documentation}" />
 							<th:block th:if="${!param.getUndeclaredExtensionsByUrl(requiredParamExtension).empty}">
 								<span style="color:#F88;" th:if="${param.getUndeclaredExtensionsByUrl(requiredParamExtension).get(0).value.value}">
-									(required)
+									(obrigatório)
 								</span>
 								<span th:if="${!param.getUndeclaredExtensionsByUrl(requiredParamExtension).get(0).value.value}">
-									(optional)
+									(opcional)
 								</span>
 							</th:block>
 						</div>
